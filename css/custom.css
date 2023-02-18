@@ -494,6 +494,7 @@ a:focus{
 	font-size: 14px;
 	line-height: 1.8em;
 	font-weight: 300;
+	text-align: justify;
 }
 
 .btn-video{
@@ -569,6 +570,7 @@ a:focus{
 	color: #5a5c5e;
 	font-size: 14px;
 	line-height: 1.5em;
+	text-align: justify;
 }
 
 /*  Features area css  */
@@ -1349,3 +1351,53 @@ footer{
 		margin-top: 40px;
 	}
 }
+
+.error-msg {
+	margin-bottom: 20px;
+	background: #ff00031f;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center; }
+  
+  .error-msg p {
+	color: #f10;
+	font-size: 16px; }
+  
+  .success-msg {
+	margin-bottom: 20px;
+	background: #3eb75e2e;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center; }
+  
+  .success-msg p {
+	color: green;
+	font-size: 16px; }
+  
+	#sendmessage {
+	  display: none;
+	  margin-bottom: 20px;
+	  background: #3eb75e2e;
+	  padding: 10px;
+	  border-radius: 10px;
+	  text-align: center;
+	}
+	
+	#errormessage {
+	  display: none;
+	  margin-bottom: 20px;
+	  background: #ff00031f;
+	  padding: 10px;
+	  border-radius: 10px;
+	  text-align: center;
+	}
+	
+	#sendmessage.show,
+	#errormessage.show,
+	.show {
+	  display: block;
+	}
+
+	.serviceImg {
+		width: 24%;
+	}
