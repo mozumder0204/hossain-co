@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________ Set-Up For Primary Color ___________________________*/
+
+	   /*_________ Content Primary Color ________*/
+
+.color1,.bottom_header ul.bottom_header_address>li span.ficon,.bottom_header ul li a:hover,.hephaistos.tparrows:hover:before,
+.hephaistos.tparrows:focus:before,.hephaistos.tparrows .arrow-holder:before,.welcome_section .video-box a span i,
+.makesUs_special .overlay .special_item .ficon:before,.request_quote .overlay a:hover,h1 span,h2 span,h3 span,h4 span,h5 span,
+.our_service .owl-theme .owl-nav [class*=owl-]:hover:before,.testimonial .item .author h5 span,.testimonial .item .author ul li,
+.our_team .team_member .text>a span,.our_team .team_member .text ul li a,.faq .faq_left_area .video-box a span i,
+.faq .faq_left_area .video_text a,.faq .faq_panel .panel-heading .icon:before,.request_callBack .left_half .content p span,
+.request_callBack .left_half .content p a,footer .main_footer .footer_logo a.tran3s,footer .main_footer .footer_news li span i,
+footer .main_footer .footer_news li a,footer .main_footer .footer_subscribe p,footer .main_footer .footer_subscribe ul li a:hover,
+footer .main_footer .footer_contact .item h6,footer .main_footer .footer_contact .item  ul li span:before,.scroll-top span:before,
+footer .bottom_footer ul li a:hover,footer .bottom_footer p a,.about_us_main_content .video-box a span i,.page-breadcrumb ul li i,
+.sidebar_testimonial .item .author ul li,.business_enquiry p a,.mission_vission ul li i,.mission_vission span.ficon:before,
+.include_servises .our_mission .icon span:before,.service-tabTwo .nav-pills li.active a,.service_inner_page_top .text ul li i,
+.project_page .single_project .img_holder .overlay .icon span a,.project_page #mixitup_list .text a i,
+.project_grid_sidebar .single_project .text i,.recent_news_sidebar .post p a,.single_project_content .project_description table td,
+.project_execution .execution_item .text ul li i,#related_project_slider .owl-nav [class*=owl-]:hover,
+#related_project_slider .owl-nav [class*=owl-]:hover:before,.blog_page_wrapper .blog_post_single .text>ul li a,
+.blogList_view .blogList_single_post .post ul li a,.blog_page_wrapper.blog_grid .blog_post_single .text>a,
+.blog_details_post .blog_mega_post .text>ul li a,.blog_details_post .comment_area .single_comment .comment a,
+.team_grid .team_member .text>a span,.team_grid .team_member .text ul li a,.team_single_page .team_member_short_bio .member_name> span,
+.team_single_page .member_info .info_panel h6,.team_member_education span,.send_message form>span,.team_single_page .member_info .info_panel p span,
+.our_partners_main_content .partner_info_wrapper .text i,.faqAndNews .faq_panel .panel-group .panel-heading .icon:before,
+.job_table .table tr td a:hover,.client_feedback_main_content .feedback_single_client .author ul li,.shop_page .product_wrapper .text ul li,
+.best_sellers .best_selling_item .text ul li,.shop_single_page .product_details .related_product>a,.account_page  a,
+.shop_single_page .product_details .product-review-tab .item_review_content .text .reply_share_area a:hover,
+.shop_single_page .product_details .product-review-tab .add_your_review ul li:hover,.contact_page_address .carousel-inner .item h6,
+.shop_single_page .product_details .product-review-tab .item_review_content .text .sec_up ul li,.contact_page_address ul.social_icon li a,
+.shop_single_page .product_details .product_top_section .item_description>ul>li i,.contact_page_address .carousel-inner .item  ul li span:before,
+.account_page .single_checkbox input[type="checkbox"]:checked + label:before,.request_callBack .right_half button:hover  {
+	color:#24bbd0;
+}
+
+
+
+
+
+	   /*_______ Background for primary color ______*/
+
+.color1_bg,.menuzord-menu > li:hover > a,.menuzord-menu > li.current_page > a,.menuzord-menu ul.dropdown li:hover > a,
+.hephaistos.tparrows .arrow-holder:after,.theme_title:before,.choose_us_item .icon,.testimonial .owl-item.center .text:before,
+.theme_title_center>span,footer .main_footer .footer_contact #carousel-demo .carousel-indicators li.active,.page_list li a:hover,
+.page_list li a.active,.sidebar_testimonial .carousel-indicators li.active,.sidebar_testimonial .item .text:before,
+.include_servises .include_servises_list ul li:before,.service-tabTwo .tab-content .tab-pane ul li:before,.service-tab .nav-pills li a,
+.project_page .single_project .img_holder .overlay .icon span a.fancybox,.page_pagination li a.active,.page_pagination li a:hover,
+.sidebar_categories ul li a:hover:before,.single_project_content .carousel-control:hover,.single_project_content .carousel-control:focus,
+.blog_page_wrapper .blog_post_single .text .share:hover,.blog_page_wrapper .blog_post_single .text .share-content li a:hover,
+.blog_details_post .blog_mega_post .text .social_icon li a:hover,.career_single_main_content .requirement_list li:before,
+.single-sidebar.price-ranger .ui-slider .ui-slider-range,.single-sidebar.price-ranger .ranger-min-max-block input[type='submit'],
+.cart .shop_cart_table button:hover,.cart_table .payment_system a:hover,.contact_page_address #contact-slider .carousel-indicators li.active,
+.testimonial .owl-theme .owl-dots .owl-dot.active span,.testimonial .owl-theme .owl-dots .owl-dot:hover span,.contact_us_form #error button,
+.contact_us_form #success button,.menuzord .showhide span,.switcher .switch_btn button,.switcher .switch_menu h5.title   {
+	background: #24bbd0;
+}
+
+
+
+	   	/*_______ Border for Primary color ______*/
+
+.welcome_section .video-box a span i,#banner h1,.our_service .owl-theme .owl-nav [class*=owl-]:hover,.our_team .team_member .opacity:before,
+.our_team .team_member .opacity:after,.faq .faq_left_area .video-box a span i,.faq .faq_left_area .video_text a i,
+.about_us_main_content .video-box a span i,.sidebar_testimonial .carousel-indicators li,.include_servises .our_mission .icon,
+.service-tab .nav-pills li.active a,.sidebar_categories ul li a:before,#related_project_slider .owl-nav [class*=owl-]:hover,
+#related_project_slider .owl-nav [class*=owl-]:hover:before,.team_grid .team_member .opacity:before,.team_grid .team_member .opacity:after,
+.testimonial .owl-theme .owl-dots .owl-dot span  {
+	border-color:#24bbd0;
+}
+
+
+
+
+
+
+
+
+/*________________________________ Set-Up For Secondary Color _________________________*/
+
+	   /*_________ Content Secondary Color ________*/
+.color2,header .top_header ul li i,.hephaistos.tparrows:before,.testimonial .owl-item.center .item>span,.request_quote_footer a:hover,
+.team_grid .team_member .text ul li a:hover,.cart .shop_cart_table .table-1 tr td span.color2,.contact_page_address ul.social_icon li a:hover  {
+	color:#121d2f;
+}
+.page_list li a:after {
+	color:#152235;
+}
+
+	   /*_______ Background for Secondary color ______*/
+footer,.color2_bg,header .ui-state-default,.ui-state-hover,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.theme_menu.fixed,
+.testimonial .owl-item.center .text,.faq .faq_panel .panel-heading.active-panel .icon,.request_callBack .right_half,.sidebar_testimonial .item .text,
+.nav_side_content .search_option form button,.service-tabTwo .nav-pills li.active a,.service-tab .nav-pills li.active a,
+.project_page.project_gallery_filter .load_more:hover,.project_page .mixitUp_menu ul li:hover,.project_page .mixitUp_menu ul li.active,
+.sidebar_tags ul li a:hover,.project_masonary .load_more:hover,.single_project_content .carousel-control,.single_project_content .project_name a:hover,
+.blog_page_wrapper .blog_post_single .text .read_more:hover,.blog_details_post .reply_area button:hover,.send_message button:hover,
+.our_partners_main_content .partner_info_wrapper .text span:before,.faqAndNews .faq_panel .panel-group .panel-heading.active-panel .icon,
+.section_top_media a:hover,.section_top_media a:hover,.career_single_main_content .apply_form form .submit_wrapper button:hover,
+.shop_page .product_wrapper:hover .text a,.single-sidebar.price-ranger .ui-slider-handle,.cart .shop_cart_table .icon_holder,
+.shop_single_page .product_details .product-review-tab .add_your_review form button:hover, .shop_single_page .product_details .product-review-tab .nav li.active a,
+.shop_single_page .product_details .product_top_section .item_description>a:hover,.account_page form button:hover,
+.contact_page_address #contact-slider .carousel-indicators li  {
+	background: #121d2f;
+}
+
+.request_quote .overlay,.our_service .item .overlay,.our_team .team_member .opacity,.sidebar_recent_project .overlay,
+.project_page .single_project .img_holder .overlay,.blog_page_wrapper .blog_post_single .img_holder .opacity,
+.blogList_view .blogList_single_post .img_holder .opacity,.team_grid .team_member .opacity {
+	background:rgba(18,29,47,0.9);
+}
+.our_team .overlay {
+	background:rgba(18,29,47,0.96);
+}
+.recent_news_sidebar .img_holder .opacity {
+	background:rgba(18,29,47,0.8);
+}
+.request_callBack .left_half,footer .main_footer .footer_subscribe form input,.scroll-top,.page_list li a:before {
+  background: #152235;
+}
+footer .main_footer .footer_contact #carousel-demo .carousel-indicators li {
+	background: #1d2a3e;
+}
+
+	   	/*_______ Border for Secondary color ______*/
+
+.faq .faq_panel .panel-heading.active-panel .icon,.project_page .mixitUp_menu ul li:hover,
+.project_page .mixitUp_menu ul li.active {
+	border-color:#121d2f;
+}
+.sidebar_testimonial .item>span {
+	border-top-color: #121d2f;
+}
+footer .bottom_footer {
+	border-color:#152235;
+}
