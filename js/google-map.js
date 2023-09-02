@@ -36,32 +36,32 @@ function gMapHome () {
 			// if icon path setted then show marker
 			if(iconPath) {
 				
-				map.addMarker({
-			    	icon: iconPath,
-			    	lat: mapLat,
-			      	lng: mapLng,
-			      	title: 'North Parchrtome Steet ',
-			      	infoWindow: {
-						content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
-					}
-				});
-				map.addMarker({
-			    	icon: iconPath,
-			    	lat: 40.728157,
-			      	lng: -74.077642,
-			      	title: 'North Parchrtome Steet ',
-			      	infoWindow: {
-						content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
-					}
-				});
+				// map.addMarker({
+			    // 	icon: iconPath,
+			    // 	lat: mapLat,
+			    //   	lng: mapLng,
+			    //   	title: 'North Parchrtome Steet ',
+			    //   	infoWindow: {
+				// 		content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
+				// 	}
+				// });
+				// map.addMarker({
+			    // 	icon: iconPath,
+			    // 	lat: 40.728157,
+			    //   	lng: -74.077642,
+			    //   	title: 'North Parchrtome Steet ',
+			    //   	infoWindow: {
+				// 		content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
+				// 	}
+				// });
 				
 				map.addMarker({
 			    	icon: iconPath,
-			    	lat: 40.678178,
-			      	lng: -73.944158,
-			      	title: 'Sub Office for Rental',
+			    	lat: 23.73749584939567,
+			      	lng: 90.41176778646198,
+			      	title: 'Hossain & Co.',
 			      	infoWindow: {
-						content: '<h6>Longkloof Studio</h6> <p>City Life Villa</p>'
+						content: '<h6>Hossain & Co.</h6> <p>Best Professional Service provider</p>'
 					}
 				});
 				
