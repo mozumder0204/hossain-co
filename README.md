@@ -1,6 +1,6 @@
 ﻿# Hossain @ Co.
 
-![Hossain @ Co. Logo]([https://example.com/logo.png](https://taxvathc.com/images/logo.png))
+![Hossain @ Co. Logo](https://example.com/logo.png](https://taxvathc.com/images/logo.png)
 
 ## About Us
 
