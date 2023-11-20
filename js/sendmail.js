@@ -1,32 +1,42 @@
 function sendEmail(form) {
-//   form.preventDefault();
-  let cName = form.elements['contact-name'] ? form.elements['contact-name'].value : "";
-  let cPhone = form.elements['phone'] ? form.elements['phone'].value : "";
-  let cEmail = form.elements['contact-email'] ? form.elements['contact-email'].value : "";
-  let consultingType = form.elements['consulting-type'] ? form.elements['consulting-type'].value : "";
-  let subject = form.elements['subject'] ? form.elements['subject'].value : "";
-  let body = form.elements['contact-form'] && form.elements['contact-form']['contact-message'] ? form.elements['contact-form']['contact-message'].value : "";
+  event.preventDefault();
+  let cName = form.elements["contact-name"]
+    ? form.elements["contact-name"].value
+    : "";
+  let cPhone = form.elements["phone"] ? form.elements["phone"].value : "";
+  let cEmail = form.elements["contact-email"]
+    ? form.elements["contact-email"].value
+    : "";
+  let consultingType = form.elements["consulting-type"]
+    ? form.elements["consulting-type"].value
+    : "";
+  let subject = form.elements["subject"] ? form.elements["subject"].value : "";
+  let body =
+    form.elements["contact-form"] &&
+    form.elements["contact-form"]["contact-message"]
+      ? form.elements["contact-form"]["contact-message"].value
+      : "";
 
-  if (cName == '') {
-    alert('Name must be filled out');
+  if (cName == "") {
+    alert("Name must be filled out");
     return false;
   }
-  if (cPhone == '') {
-    alert('Phone No. must be filled out');
+  if (cPhone == "") {
+    alert("Phone No. must be filled out");
     return false;
   }
-//   if (cEmail == '') {
-//     alert('Email must be filled out');
-//     return false;
-//   }
-//   if (subject == '') {
-//     alert('Subject must be filled out');
-//     return false;
-//   }
-//   if (body == '') {
-//     alert('Your message must be filled out');
-//     return false;
-//   }
+  //   if (cEmail == '') {
+  //     alert('Email must be filled out');
+  //     return false;
+  //   }
+  //   if (subject == '') {
+  //     alert('Subject must be filled out');
+  //     return false;
+  //   }
+  //   if (body == '') {
+  //     alert('Your message must be filled out');
+  //     return false;
+  //   }
 
   let emailBody = `<table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapperBody" style="max-width:600px">
               <tbody>
@@ -75,35 +85,27 @@ function sendEmail(form) {
           </table>`;
 
   Email.send({
-    name: form.elements['contact-name'].value,
+    name: form.elements["contact-name"].value,
     Host: 'smtp.elasticemail.com',
     PORT: 2525,
-    Username: 'info@taxvathc.com',
-    Password: '9BD28A7516544120CCA898F291D62EFA7196',
-    To: 'billal.hossain@ixorasolution.com',
+    Username: 'mail@taxvathc.com',
+    Password: '0729359689ADB280072A6596C9E1F58AFA0C',
+    Password: "Ayaat08@0821",
+    To: "billal.hossain@ixorasolution.com",
     // To: 'mozumder0204@gmail.com,hossainmohammedanowar@gmail.com',
-    From: 'info@taxvathc.com',
+    From: "info@taxvathc.com",
     Subject: `${cName} Just messeaged you from the TaxVatHC website form.`,
     Body: emailBody, //document.getElementById('contact-message').value,
   }).then(function (response) {
-    if (response == 'OK') {
-      $('#sendmessage').addClass('show');
-      $('#errormessage').removeClass('show');
-      $('.contactForm').find('input, textarea').val('');
+    if (response == "OK") {
+      $("#sendmessage").addClass("show");
+      $("#errormessage").removeClass("show");
+      $(".contactForm").find("input, textarea").val("");
     } else {
-      $('#sendmessage').removeClass('show');
-      $('#errormessage').addClass('show');
-      $('#errormessage').html(msg);
-      throw new Error('Error: ' + response.statusText);
+      $("#sendmessage").removeClass("show");
+      $("#errormessage").addClass("show");
+      $("#errormessage").html(msg);
+      throw new Error("Error: " + response.statusText);
     }
   });
 }
-
-$('#contactbtn').click(function () {
-  $('html,body').animate(
-    {
-      scrollTop: $('#contact').offset().top,
-    },
-    'slow'
-  );
-});
