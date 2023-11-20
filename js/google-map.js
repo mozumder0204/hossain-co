@@ -1,80 +1,37 @@
+// Use strict mode
 "use strict";
 
+// Function to initialize the map
+function initMap() {
+  // Replace the coordinates with your actual latitude and longitude
+  var myLat = 23.7347077;
+  var myLng = 90.4112712;
 
-function gMapHome () {
-	if ($('.google-map-home').length) {
-		$('.google-map-home').each(function () {
-			// getting options from html 
-			var Self = $(this);
-			var mapName = Self.attr('id');
-			var mapLat = Self.data('map-lat');
-			var mapLng = Self.data('map-lng');
-			var iconPath = Self.data('icon-path');
-			var mapZoom = Self.data('map-zoom');
-			var mapTitle = Self.data('map-title');
+  // Create the map
+  var map = L.map("google-map").setView([myLat, myLng], 18);
 
+  // Add a tile layer (you can choose different providers)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "",
+  }).addTo(map);
 
-			var styles = [{"featureType": "all", "elementType": "geometry.fill", "stylers": [{"visibility": "on"} ] }, {"featureType": "all", "elementType": "labels", "stylers": [{"visibility": "off"} ] }, {"featureType": "all", "elementType": "labels.text.fill", "stylers": [{"visibility": "off"} ] }, {"featureType": "administrative", "elementType": "labels.text", "stylers": [{"visibility": "off"} ] }, {"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [{"color": "#444444"} ] }, {"featureType": "administrative.locality", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"} ] }, {"featureType": "landscape", "elementType": "geometry.fill", "stylers": [{"visibility": "on"} ] }, {"featureType": "landscape", "elementType": "geometry.stroke", "stylers": [{"visibility": "on"} ] }, {"featureType": "landscape", "elementType": "labels", "stylers": [{"visibility": "off"} ] }, {"featureType": "landscape", "elementType": "labels.text", "stylers": [{"visibility": "off"} ] }, {"featureType": "poi", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "road", "elementType": "all", "stylers": [{"saturation": -100 }, {"lightness": 45 } ] }, {"featureType": "road.highway", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "road.highway.controlled_access", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "road.arterial", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{"visibility": "off"} ] }, {"featureType": "road.local", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "transit.line", "elementType": "all", "stylers": [{"visibility": "off"} ] }, {"featureType": "transit.line", "elementType": "geometry", "stylers": [{"visibility": "off"} ] }, {"featureType": "transit.line", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"} ] }, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#20bed0"}, {"visibility": "on"} ] } ];
+  // Remove Leaflet attribution
+  map.attributionControl.setPrefix("");
 
+  // Create a Google Maps link
+  var googleMapsLink = "https://maps.app.goo.gl/wJ1PHCvp7S5yQMKf7";
 
-
-
-			// if zoom not defined the zoom value will be 15; 
-			if (!mapZoom) {
-				var mapZoom = 3;
-			};
-			// init map
-			var map;
-			map = new GMaps({
-			    div: '#'+mapName,
-			    scrollwheel: false,
-			    lat: mapLat,
-			    lng: mapLng,
-			    styles: styles,
-			    zoom: mapZoom
-			});
-			// if icon path setted then show marker
-			if(iconPath) {
-				
-				// map.addMarker({
-			    // 	icon: iconPath,
-			    // 	lat: mapLat,
-			    //   	lng: mapLng,
-			    //   	title: 'North Parchrtome Steet ',
-			    //   	infoWindow: {
-				// 		content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
-				// 	}
-				// });
-				// map.addMarker({
-			    // 	icon: iconPath,
-			    // 	lat: 40.728157,
-			    //   	lng: -74.077642,
-			    //   	title: 'North Parchrtome Steet ',
-			    //   	infoWindow: {
-				// 		content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'
-				// 	}
-				// });
-				
-				map.addMarker({
-			    	icon: iconPath,
-			    	lat: 23.73749584939567,
-			      	lng: 90.41176778646198,
-			      	title: 'Hossain & Co.',
-			      	infoWindow: {
-						content: '<h6>Hossain & Co.</h6> <p>Best Professional Service provider</p>'
-					}
-				});
-				
-			}
-		});  
-	};
+  // Add a marker with a popup
+  L.marker([myLat, myLng])
+    .addTo(map)
+    .bindPopup("<a href='" + googleMapsLink + "' target='_blank'><h6>Hossain & Co.</h6></a>")
+    .openPopup()
+	.on('click', function() {
+        window.open(googleMapsLink, '_blank');
+    });
 }
 
-
-// Dom Ready Function
-jQuery(document).on('ready', function () {
-	(function ($) {
-		// add your functions
-		gMapHome();
-	})(jQuery);
+// Run the initMap function when the document is ready
+document.addEventListener("DOMContentLoaded", function () {
+  initMap();
 });
