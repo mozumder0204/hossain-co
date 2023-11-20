@@ -90,10 +90,8 @@ function sendEmail(form) {
     PORT: 2525,
     Username: 'mail@taxvathc.com',
     Password: '0729359689ADB280072A6596C9E1F58AFA0C',
-    Password: "Ayaat08@0821",
-    To: "billal.hossain@ixorasolution.com",
-    // To: 'mozumder0204@gmail.com,hossainmohammedanowar@gmail.com',
-    From: "info@taxvathc.com",
+    To: 'mozumder0204@gmail.com,billal.hossain@ixorasolution.com',
+    From: "mbhm.official@gmail.com",
     Subject: `${cName} Just messeaged you from the TaxVatHC website form.`,
     Body: emailBody, //document.getElementById('contact-message').value,
   }).then(function (response) {
