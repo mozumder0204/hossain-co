@@ -541,7 +541,7 @@
 				<div class="overlay">
 					<div class="container">
 						<p class="pull-left">Over 15 years of experience we’ll ensure you always get the best guidance.</p>
-						<a href="#" class="color1_bg pull-right tran3s">Request quote</a>
+						<a href="contact.html" class="color1_bg pull-right tran3s">Contact Us</a>
 					</div> <!-- End of .container -->
 				</div>
 			</div> <!-- End of .request_quote -->
@@ -803,7 +803,7 @@
 				<div class="overlay">
 					<div class="container">
 						<p class="pull-left">15+ years of experience for top-tier tax advice and financial optimization.</p>
-						<a href="#" class="color1_bg pull-right tran3s">Request quote</a>
+						<a href="contact.html" class="color1_bg pull-right tran3s">Contact Us</a>
 					</div>
 				</div>
 			</div> <!-- End of .2nd request_quote -->
@@ -1041,26 +1041,28 @@
 
 				<div class="right_half pull-right">
 					<div class="content pull-left wow fadeInRight">
-						<form action="#">
+						<form name="contact-form" id="contact-form" method="POST" action="#" method="post" onsubmit="return sendEmail(this);"
+							role="form">
 							<span>I would like to discuss:</span>
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-6">
-									<select class="selectmenu">
-									  <option>Turnaround Consulting</option>
-									  <option>Business Consulting</option>
+									<input type="text" id="contact-name" name="contact-name" placeholder="Your Name *">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<input type="text" id="contact-phone" name="phone" placeholder="Phone Number *">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<input type="email" id="contact-email" name="contact-email" placeholder="Your Mail *">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<select class="selectmenu" id="consulting-type" name="consulting-type">
+										<option value="" selected>Please select an option</option>
+										<option value="turnaround-consulting">Turnaround Consulting</option>
+										<option value="business-consulting">Business Consulting</option>
 									</select>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6">
-									<input type="text" placeholder="Your Name *">
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6">
-									<input type="email" placeholder="Your Mail *">
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6">
-									<input type="text" placeholder="Phone Number *">
-								</div>
 							</div>
-							<button class="color1_bg tran3s">Submit</button>
+							<button class="color1_bg tran3s" id="submit" name="submit" value="Send Request Now">Submit</button>
 						</form>
 					</div> <!-- End of .content -->
 					<div class="clear_fix"></div>
@@ -1086,7 +1088,7 @@
 								<a href="index.html"><img src="images/logo/logo.png" alt="Logo"></a>
 								<p> <strong>Hossain &amp; Co.</strong> offer clients a big picture analysis of their finances. They break down different aspects of a client's financial life, including assets, expenses and income, and help them create a financial plan to reach different types of goals.  </p>
 
-								<a href="#" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Request Quote</a>
+								<a href="contact.html" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
 								<a href="#" class="tran3s"><i class="fa fa-caret-right" aria-hidden="true"></i> Purchase Now</a>
 							</div> <!-- End of .footer_logo -->
 
@@ -1110,16 +1112,16 @@
 							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_subscribe">
 								<h5>Subscribe us</h5>
 								<p>By subscribing to our mailing list you will always be update with the latest news from us.</p>
-								<form action="#">
+								<form action="javascript:void(0)">
 									<input type="text" placeholder="Enter Your Email">
 									<button class="tran3s color1_bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
 								</form>
 								<span>We never spam!</span>
 								<ul class="social_icon">
-									<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+									<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
 							</div> <!-- End of .footer_subscribe -->
 
@@ -1178,10 +1180,10 @@
 						<p> Copyright © <strong>Hossain &amp; Co.</strong>. All rights reserved. Design By <a href="http://themeforest.net/user/steelthemes/portfolio" target="_blank">Steelthemes</a> </p>
 						<!-- <p class="pull-left">© 2016 Dynamic Theme Designed by <a href="http://themeforest.net/user/steelthemes/portfolio" target="_blank">Steelthemes</a></p> -->
 						<ul class="social_icon pull-right">
-							<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:void(0)" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -1242,6 +1244,7 @@
 		<script type="text/javascript" src="js/theme.js"></script>
 		<script type="text/javascript" src="js/google-map.js"></script>
 		<script type="text/javascript" src="js/leaflet.js"></script>
+		<script type="text/javascript" src="js/sendmail.js"></script>
 
 		</div> <!-- End of .main_page -->
 	</body>
