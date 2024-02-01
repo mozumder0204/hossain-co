@@ -225,13 +225,22 @@
 								 <!-- Indicators -->
 								  <ol class="carousel-indicators">
 								    <li data-target="#contact-slider" data-slide-to="0" class="active"></li>
-								    <li data-target="#contact-slider" data-slide-to="1"></li>
-								    <li data-target="#contact-slider" data-slide-to="2"></li>
+								    <!-- <li data-target="#contact-slider" data-slide-to="1"></li> -->
+								    <!-- <li data-target="#contact-slider" data-slide-to="2"></li> -->
 								  </ol>
 								  
 								  <!-- Sliding images statring here --> 
 								   <div class="carousel-inner"> 
-									    <div class="item active">
+										<div class="item active">
+											<h6>Bangladesh Office</h6>
+										<ul>
+											<li><span class="ficon flaticon-map"></span> Suite # 78/A, Purana Paltan Line <br>(2nd Floor), Dhaka-1000, Bangladesh</li>
+											<li><span class="ficon flaticon-mobile"></span> Call us: +88 01620 403647</li>
+											<li><span class="ficon flaticon-message"></span> Mail us : hossainmohammedanowar@gmail.com</li>
+											<li><span class="ficon flaticon-clock"></span> Sat - Thu 9.00 - 20.00,<br>Friday CLOSED</li>
+										</ul>
+									</div>
+									    <!-- <div class="item active">
 									      	<h6>United States Office</h6>
 											<ul>
 												<li><span class="ficon flaticon-map"></span> 007 Edgar Buildings,<br>George Street, CA 03, USA</li>
@@ -257,7 +266,7 @@
 												<li><span class="ficon flaticon-message"></span> Mail us : USA@Consulting.com</li>
 												<li><span class="ficon flaticon-clock"></span> Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</li>
 											</ul>         
-									    </div> 
+									    </div>  -->
 									</div>
 								</div> <!-- End of #contact-slider -->
 
@@ -279,30 +288,29 @@
 									<h3>Send Message</h3>
 								</div>
 
-								<form action="inc/sendemail.php" class="form-validation" autocomplete="off">
-									<span>I would like to discuss:</span>
-									<div class="row">
-										<div class="col-lg-6 col-md-6">
-											<select class="selectmenu" name="category">
-											  <option>Turnaround Consulting</option>
-											  <option>Business Consulting</option>
-											</select>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<input type="text" placeholder="Your Name *" name="name">
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<input type="email" placeholder="Your Mail *" name="email">
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<input type="text" placeholder="Phone Number *" name="phone">
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<textarea placeholder="Your Message" name="message"></textarea>
-										</div>
+								<form name="contact-form" id="contact-form" method="POST" action="#" method="post" onsubmit="return sendEmail(this);"
+								role="form">
+								<span>I would like to discuss:</span>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<input type="text" id="contact-name" name="contact-name" placeholder="Your Name *">
 									</div>
-									<button class="color1_bg tran3s">Submit Now</button>
-								</form>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<input type="text" id="contact-phone" name="phone" placeholder="Phone Number *">
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<input type="email" id="contact-email" name="contact-email" placeholder="Your Mail *">
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<select class="selectmenu" id="consulting-type" name="consulting-type">
+											<option value="" selected>Please select an option</option>
+											<option value="turnaround-consulting">Turnaround Consulting</option>
+											<option value="business-consulting">Business Consulting</option>
+										</select>
+									</div>
+								</div>
+								<button class="color1_bg tran3s" id="submit" name="submit" type="submit" value="Send Request Now">Submit</button>
+							</form>
 
 								<div class="alert_wrapper" id="alert_success">
 									<div id="success">
@@ -390,14 +398,23 @@
 								 <!-- Indicators -->
 								  <ol class="carousel-indicators">
 								    <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
-								    <li data-target="#carousel-demo" data-slide-to="1"></li>
-								    <li data-target="#carousel-demo" data-slide-to="2"></li>
+								    <!-- <li data-target="#carousel-demo" data-slide-to="1"></li> -->
+								    <!-- <li data-target="#carousel-demo" data-slide-to="2"></li> -->
 								  </ol>
 								  
 								  <!-- Sliding images statring here --> 
 								   <div class="carousel-inner"> 
 									    <div class="item active">
-									      	<h6>United States Office</h6>
+											<div class="item active">
+												<h6>Bangladesh Office</h6>
+											  <ul>
+												  <li><span class="ficon flaticon-map"></span> Suite # 78/A, Purana Paltan Line <br>(2nd Floor), Dhaka-1000, Bangladesh</li>
+												  <li><span class="ficon flaticon-mobile"></span> Call us: +88 01620 403647</li>
+												  <li><span class="ficon flaticon-message"></span> Mail us : hossainmohammedanowar@gmail.com</li>
+												  <li><span class="ficon flaticon-clock"></span> Sat - Thu 9.00 - 20.00,<br>Friday CLOSED</li>
+											  </ul>
+										  </div>
+									      	<!-- <h6>United States Office</h6>
 											<ul>
 												<li><span class="ficon flaticon-map"></span> 007 Edgar Buildings,<br>George Street, CA 03, USA</li>
 												<li><span class="ficon flaticon-mobile"></span> Call us: +3257 700 1430</li>
@@ -424,7 +441,7 @@
 												<li><span class="ficon flaticon-message"></span> Mail us : USA@Consulting.com</li>
 												<li><span class="ficon flaticon-clock"></span> Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</li>
 											</ul>         
-									    </div> 
+									    </div>  -->
 									</div>
 								</div>
 							</div> <!-- End of .footer_contact -->
